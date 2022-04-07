@@ -1,4 +1,4 @@
-import { Heading, Image, useMediaQuery } from '@chakra-ui/react';
+import { Image, useMediaQuery } from '@chakra-ui/react';
 
 export const HomeBanner = () => {
   const [isLg] = useMediaQuery('(min-width: 62em)');

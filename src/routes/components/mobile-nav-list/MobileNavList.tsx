@@ -1,6 +1,6 @@
 import { Box, Button, Image, List, ListItem, VStack } from '@chakra-ui/react';
 import { Location, NavLink } from 'react-router-dom';
-import { IRoute, routes } from '../../routes';
+import { routes } from '../../routes';
 
 interface Props {
   isOpen: boolean;

@@ -15,7 +15,6 @@ export const AnimatedRoutes = () => {
           element={<Navigate to={routes[routes.length - 1].to} replace />}
         />
       </Routes>
-      //{' '}
     </AnimatePresence>
   );
 };

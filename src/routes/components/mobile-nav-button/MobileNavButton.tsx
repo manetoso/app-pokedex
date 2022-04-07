@@ -4,7 +4,7 @@ import { INavIcons } from '../../navIcons';
 
 const MotionIconButton = motion(IconButton);
 
-interface MobileNavButton {
+interface IMobileNavButton {
   selectedIcon: INavIcons;
   handleIsOpen: () => void;
 }
@@ -12,7 +12,7 @@ interface MobileNavButton {
 export const MobileNavButton = ({
   selectedIcon,
   handleIsOpen,
-}: MobileNavButton) => {
+}: IMobileNavButton) => {
   return (
     <Box position="absolute" zIndex="100" right="1.5rem">
       <AnimatePresence exitBeforeEnter>
