@@ -21,8 +21,8 @@ export const CustomButton = ({
       fontSize="2xl"
       paddingY="1.5rem"
       bg={
-        (buttonType === 'primary' && 'types.grass') ||
-        (buttonType === 'secondary' && 'brand.third') ||
+        (buttonType === 'primary' && 'types.grass.500') ||
+        (buttonType === 'secondary' && 'brand.third.500') ||
         'blackAlpha.500'
       }
       borderRadius="xl"
@@ -32,8 +32,8 @@ export const CustomButton = ({
       transitionDuration="1500ms"
       _hover={{
         bg:
-          (buttonType === 'primary' && 'types.grass') ||
-          (buttonType === 'secondary' && 'brand.third') ||
+          (buttonType === 'primary' && 'types.grass.500') ||
+          (buttonType === 'secondary' && 'brand.third.500') ||
           'blackAlpha.500',
       }}
       transformOrigin=""

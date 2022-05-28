@@ -32,6 +32,7 @@ export const usePokemonGrid = (simplePokemonList: SimplePokemon[]) => {
 
   const handleOnSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCurrentPage(0);
+    setPageLabel(1);
     setSearch(event.target.value);
   };
 

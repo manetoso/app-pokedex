@@ -113,7 +113,7 @@ export const Pokedex = () => {
             href="#pokemons-top-grid"
             aria-label="Previous Page"
             variant="outline"
-            colorScheme="yellow"
+            colorScheme="types.electric"
             isDisabled={pageLabel === 1 && true}
             icon={<HiOutlineChevronLeft />}
           />
@@ -126,7 +126,7 @@ export const Pokedex = () => {
             href="#pokemons-top-grid"
             aria-label="Next Page"
             variant="outline"
-            colorScheme="yellow"
+            colorScheme="types.electric"
             isDisabled={pageLabel === maxPage && true}
             icon={<HiOutlineChevronRight />}
           />

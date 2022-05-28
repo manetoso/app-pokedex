@@ -182,3 +182,17 @@ export interface SimplePokemonData {
   stats: Stat[];
   bgColor: string;
 }
+
+export interface DetailPokemonData {
+  id: number;
+  name: string;
+  picture: string;
+  abilities: Ability[];
+  base_experience: number;
+  types: Type[];
+  hp: Stat;
+  stats: Stat[];
+  bgColor: string;
+  version: string;
+  versionName: string;
+}

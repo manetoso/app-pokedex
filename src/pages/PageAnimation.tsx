@@ -21,7 +21,6 @@ export const PageAnimation = ({ children }: Props) => {
       exit="exit"
       variants={pageMotion}
       w="100%"
-      zIndex="50"
     >
       {children}
     </MotionBox>
