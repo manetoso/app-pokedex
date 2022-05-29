@@ -24,9 +24,10 @@ export const PokemonCardModalMobile = ({ pokemonData }: Props) => {
         flexDir="column"
         alignItems="center"
         gap="1rem"
-        width="100%"
+        minW="100%"
+        minH="100%"
         paddingX="1rem"
-        marginTop="3rem"
+        paddingY="1rem"
         position="relative"
         zIndex="99"
       >
@@ -137,7 +138,7 @@ export const PokemonCardModalMobile = ({ pokemonData }: Props) => {
         left="0"
         right="0"
         bottom="0"
-        h="65vh"
+        h="65%"
         zIndex="98"
         borderTopRadius="2xl"
         bgGradient={`linear(to-t, types.${pokemonData.bgColor}.500, types.${pokemonData.bgColor}.900)`}

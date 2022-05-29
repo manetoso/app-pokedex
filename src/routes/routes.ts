@@ -20,12 +20,12 @@ export const routes: IRoute[] = [
     Component: Pokedex,
     label: 'Pokedex',
   },
-  {
-    to: '/legendaries',
-    path: 'legendaries',
-    Component: Legendaries,
-    label: 'Legendaries',
-  },
+  // {
+  //   to: '/legendaries',
+  //   path: 'legendaries',
+  //   Component: Legendaries,
+  //   label: 'Legendaries',
+  // },
   {
     to: '/the-team',
     path: 'the-team',

@@ -2,6 +2,7 @@ import { Box, Flex, IconButton, Image } from '@chakra-ui/react';
 import { DetailPokemonData } from '../../../interfaces/pokemonData';
 import closeIcon from '../../../assets/closeIcon.svg';
 import { PokemonCardModalMobile } from './PokemonCardModalMobile';
+import { PokemonCardModal } from './PokemonCardModal';
 
 interface Props {
   isLg: Boolean;
@@ -35,24 +36,28 @@ export const PokemonModal = ({
           position="relative"
           bgGradient={`linear(to-t, types.${pokemonData.bgColor}.300, types.${pokemonData.bgColor}.500)`}
           transform={isOpen ? 'scale(1)' : 'scale(0)'}
-          w={isLg ? 'auto' : '100vw'}
-          h={isLg ? 'auto' : '100vh'}
+          minW={isLg ? 'auto' : '100vw'}
+          minH={isLg ? 'auto' : '100vh'}
           borderRadius="3xl"
           transition="ease-in-out"
           transitionDuration="300ms"
+          boxShadow="lg"
         >
           {isLg ? (
-            <IconButton
-              aria-label="Close"
-              icon={<Image src={closeIcon} />}
-              position="absolute"
-              top="-3rem"
-              right="0"
-              variant="ghost"
-              colorScheme="types.shadow"
-              fontSize="5xl"
-              onClick={handleIsOpen}
-            />
+            <>
+              <IconButton
+                aria-label="Close"
+                icon={<Image src={closeIcon} />}
+                position="absolute"
+                top="-3rem"
+                right="0"
+                variant="ghost"
+                colorScheme="types.shadow"
+                fontSize="5xl"
+                onClick={handleIsOpen}
+              />
+              <PokemonCardModal pokemonData={pokemonData} />
+            </>
           ) : (
             <>
               <IconButton
